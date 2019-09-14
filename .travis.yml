@@ -18,7 +18,7 @@ after_success:
   ## Login to docker hub CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "DOCKER_ID" --password-stdin
   ## push to the docker hub
-  - docker push -t shashankbenegal/multi-client
-  - docker push -t shashankbenegal/multi-nginx
-  - docker push -t shashankbenegal/multi-server
-  - docker push -t shashankbenegal/multi-worker
+  - docker push shashankbenegal/multi-client
+  - docker push shashankbenegal/multi-nginx
+  - docker push shashankbenegal/multi-server
+  - docker push shashankbenegal/multi-worker
