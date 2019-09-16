@@ -12,7 +12,7 @@ script:
 after_success:
   - docker build -t shashankbenegal/multi-client ./client
   - docker build -t shashankbenegal/multi-nginx ./nginx
-  - docker build -t shashankbenegal/mutli-server ./server
+  - docker build -t shashankbenegal/multi-server ./server
   - docker build -t shashankbenegal/multi-worker ./worker
   
   ## Login to docker hub CLI
